@@ -1,7 +1,11 @@
 <div class="container-fluid">
+  <app-navbar></app-navbar>
   <div class="row">
-    <div class="col">
-      <app-carrousel [config]="firstCarouselConfig"></app-carrousel>
+    <div class="col" [ngSwitch]="selectedYear">
+      <app-carrousel *ngSwitchCase="YearsEnum.year2019" [config]="carouselConfig2019"></app-carrousel>
+      <app-carrousel *ngSwitchCase="YearsEnum.year2018" [config]="carouselConfig2018"></app-carrousel>
+      <app-carrousel *ngSwitchCase="YearsEnum.year2017" [config]="carouselConfig2017"></app-carrousel>      
+      <app-carrousel *ngSwitchDefault [config]="carouselConfig2020"></app-carrousel>
     </div>    
   </div>
 </div>

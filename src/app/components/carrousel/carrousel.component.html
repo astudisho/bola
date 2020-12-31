@@ -1,6 +1,6 @@
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-pause="hover">
     <div class="carousel-inner ">
-        <div *ngFor="let source of config.sourceList; first as isFirst" class="carousel-item bg-dark"
+        <div *ngFor="let source of config.sourceList; first as isFirst" class="carousel-item bg-secondary"
             [class.active]="isFirst">
             <div class="d-flex align-items-center justify-content-center app-carousel-img-container">
                 <img class="img-fluid app-carousel-img" src="{{config.path}}{{source}}.{{config.extension}}">
@@ -16,3 +16,4 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
+
