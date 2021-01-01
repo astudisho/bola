@@ -1,5 +1,6 @@
+import { AppImageData } from "./ImageData";
+
 export class CarrouselConfig {
-  sourceList: string[];
-  extension: string;
+  sourceList: AppImageData[];
   path: string;
 }

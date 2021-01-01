@@ -8,11 +8,10 @@ import { CarrouselConfig } from 'src/app/models/carrousel-config';
 })
 export class CarrouselComponent implements OnInit {
   @Input('config')
-  config: CarrouselConfig = { path : '.', sourceList: [], extension: 'jpg' };
+  config: CarrouselConfig = { path : '.', sourceList: []};
 
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.config)
   }
 }
